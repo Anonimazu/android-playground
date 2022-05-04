@@ -1,2 +1,0 @@
-# android-playground
-android playground
