@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidPlayground">
         <activity
+            android:name=".animation.AnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.MotionActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

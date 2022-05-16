@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    app:layoutDescription="@xml/activity_animation_scene">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSwipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transition on swipe" />
+
+    <View
+        android:id="@+id/buttonSwipe"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Transition on click"
+        app:layout_constraintTop_toBottomOf="@id/buttonSwipe" />
+
+    <View
+        android:id="@+id/buttonClick"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/buttonClick"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/contentContainerClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <FrameLayout
+                android:id="@+id/contentContainerSwipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/contentContainerClick"/>
+
+            <FrameLayout
+                android:id="@+id/contentContainerComplex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/contentContainerSwipe"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
