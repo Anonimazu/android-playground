@@ -10,10 +10,93 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidPlayground">
         <activity
+            android:name=".CarouselMotionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.motion.Step1Activity"
+            android:label="@string/title_activity_step1"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".animation.motion.MotionActivity" />
+        </activity>
+        <activity
+            android:name=".animation.motion.Step2Activity"
+            android:label="@string/title_activity_step2"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".animation.motion.MotionActivity" />
+        </activity>
+        <activity
+            android:name=".animation.motion.Step3Activity"
+            android:label="@string/title_activity_step3"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".animation.motion.MotionActivity" />
+        </activity>
+        <activity
+            android:name=".animation.motion.Step4Activity"
+            android:label="@string/title_activity_step4"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".animation.motion.MotionActivity" />
+        </activity>
+        <activity
+            android:name=".animation.motion.Step5Activity"
+            android:label="@string/title_activity_step5"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".animation.motion.MotionActivity" />
+        </activity>
+        <activity
+            android:name=".animation.motion.Step6Activity"
+            android:label="@string/title_activity_step6"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".animation.motion.MotionActivity" />
+        </activity>
+        <activity
+            android:name=".animation.motion.Step7Activity"
+            android:label="@string/title_activity_step7"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".animation.motion.MotionActivity" />
+        </activity>
+        <activity
+            android:name=".animation.motion.Step7CompletedActivity"
+            android:label="@string/title_activity_step7_completed"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".animation.motion.MotionActivity" />
+        </activity>
+        <activity
+            android:name=".animation.motion.Step8Activity"
+            android:label="@string/title_activity_step8"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".animation.motion.MotionActivity" />
+        </activity>
+        <activity
+            android:name=".animation.motion.Step8CompletedActivity"
+            android:label="@string/title_activity_step8"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".animation.motion.MotionActivity" />
+        </activity>
+        <activity
             android:name=".animation.AnimationActivity"
             android:exported="false" />
         <activity
-            android:name=".animation.MotionActivity"
+            android:name=".animation.motion.MotionActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
